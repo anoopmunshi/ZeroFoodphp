@@ -2,6 +2,10 @@
 <?php
 include_once('header.php');
 include_once('menu.php');
+
+$countData = file_get_contents("http://3.16.206.55:3000/api/food-centers/count");
+$count = json_decode($countData, true)
+
 ?> 
 		<script type="text/javascript">
 			function getSearch(){
@@ -99,7 +103,7 @@ include_once('menu.php');
 		<div class="col-md-6 col-md-offset-3" style="margin-top:  8rem;">
 
 					 		<span style="text-align: center;">
-									<h1>5000</h1>
+									<h1><?php echo $count['count']; ?></h1>
 							</span>
 				<p  style="text-align: center;">Free Food Centers across India </p>
 								</span>
