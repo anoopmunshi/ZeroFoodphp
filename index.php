@@ -74,7 +74,7 @@ $count = json_decode($countData, true);
 				$("#lat").val(latitude);
 				console.log("wefewcwf: ",latitude);
 				$("#long").val(longitude);
-                 alert(mesg);
+                 //alert(mesg);
             });
         });
     </script>

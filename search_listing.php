@@ -50,7 +50,7 @@ include_once('menu.php');
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-          CURLOPT_URL => "http://localhost:3000/api/food-centers?q=".$_GET['search'],
+          CURLOPT_URL => "http://localhost:3000/api/food-centers?q=".$_GET['search']."&lat=".$_GET['lat']."&long=".$_GET['long'],
           CURLOPT_RETURNTRANSFER => true,
           CURLOPT_ENCODING => "",
           CURLOPT_MAXREDIRS => 10,
