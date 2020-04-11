@@ -120,7 +120,7 @@ $end = microtime(TRUE);
                 <form id="data-<?php echo $count;?>" method="POST" action="foodcenterdetail.php">
                 <input type="hidden" name="centerdata" value='<?php echo $allData; ?>' />
                 <th scope="row"><?php echo $count; ?></th>
-                <td><a class="text-prmiary" onclick="return getDetailpage(<?php echo $count; ?>);" href="#"> <?php echo $eachListings['name']; ?></a></td>
+                <td><a class="text-primary" onclick="return getDetailpage(<?php echo $count; ?>);" href="#"> <?php echo $eachListings['name']; ?></a></td>
                 <td><?php echo $eachListings['state']; ?></td>
                 <td><?php echo $eachListings['city']; ?></td>
                 <td><?php echo $eachListings['address']; ?></td>         
