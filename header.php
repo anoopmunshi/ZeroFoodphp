@@ -31,7 +31,7 @@
 		    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
 
 
-			<!--  // Google JS reCAPTCHA v3-->
+			<!--  // Google JS reCAPTCHA v2-->
 
 			<script src="https://www.google.com/recaptcha/api.js?render=6Le4ougUAAAAADCC0zd-jMm012n1MRvhwmz4-NTB" async defer></script>
 
