@@ -49,17 +49,18 @@ include_once('menu.php');
 								Please contact us on 
 									<br>
 								<br>
-									Email: info@something.com
-									<br>
-									Phone: 9XXX-XXX-XXX					
+									Email: reach (@) zerofood.in
+													
 								</p>
 
 
 								<div class="height-40px"></div>
 								<h2 class="title text-center">Social</h2>
 								<ul class="social">
-									<li class="facebook"><a href="#"><span class="ion-social-facebook"></span></a></li>
-									<li class="twitter"><a href="#"><span class="ion-social-twitter"></span></a></li>
+									<li class="facebook"><a href="https://www.facebook.com/zerofoodin/"><span class="ion-social-facebook"></span></a></li>
+									<li class="twitter"><a href="https://twitter.com/zerofoodin"><span class="ion-social-twitter"></span></a></li>
+
+
 									
 								</ul>
 							</div>

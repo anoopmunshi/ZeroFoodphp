@@ -39,6 +39,11 @@ if(isset($_POST['type'])){
 			</div>
 		</div>
 
+
+
+
+
+
 		<?php
 		
 		include_once('footer.php')

@@ -1,10 +1,12 @@
 
 <?php
+
 include_once('header.php');
 include_once('menu.php');
 
 $countData = file_get_contents("http://3.16.206.55:3000/api/food-centers/count");
 $count = json_decode($countData, true)
+
 
 ?> 
 		<script type="text/javascript">
@@ -29,7 +31,7 @@ $count = json_decode($countData, true)
 
 <!-- Google places Autocomplete -->
 
- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=&sensor=false&libraries=places"></script>
+<!--  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key='KEY - Remove Quotes'&=&sensor=false&libraries=places"></script>
     <script type="text/javascript">
         google.maps.event.addDomListener(window, 'load', function () {
             var places = new google.maps.places.Autocomplete(document.getElementById('autocomplete_search'));
@@ -44,7 +46,7 @@ $count = json_decode($countData, true)
                 // alert(mesg);
             });
         });
-    </script>
+    </script> -->
 
 
 
@@ -83,8 +85,6 @@ $count = json_decode($countData, true)
 			  </form>
 
 
-   				
-
 		
  </div>
 
@@ -103,14 +103,22 @@ $count = json_decode($countData, true)
 		<div class="col-md-6 col-md-offset-3" style="margin-top:  8rem;">
 
 					 		<span style="text-align: center;">
-									<h1><?php echo $count['count']; ?></h1>
+
+									<h2><?php echo $count['count']; ?></h2>
+
 							</span>
 				<p  style="text-align: center;">Free Food Centers across India </p>
 								</span>
 						
 	  	</div>
 
+
+
+
+
 		</body>
+
+
 		<?php
 		
 		include_once('footer.php')
