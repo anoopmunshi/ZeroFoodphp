@@ -41,7 +41,9 @@ $count = json_decode($countData, true);
 					alert("Please enter your Search location");
 					return false;
 				}
-				window.location.href = 'search_listing.php?search='+searchText;
+				var lat = $('#lat').val();
+				var long = $('#long').val();
+				window.location.href = 'search_listing.php?search='+searchText+'&long='+long+"&lat="+lat;
 				
 				return false;
 			}
@@ -56,22 +58,26 @@ $count = json_decode($countData, true);
 
 <!-- Google places Autocomplete -->
 
-<!--  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key='KEY - Remove Quotes'&=&sensor=false&libraries=places"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key='KEY'&sensor=false&libraries=places"></script>
     <script type="text/javascript">
         google.maps.event.addDomListener(window, 'load', function () {
             var places = new google.maps.places.Autocomplete(document.getElementById('autocomplete_search'));
             google.maps.event.addListener(places, 'place_changed', function () {
                 var place = places.getPlace();
                 var address = place.formatted_address;
-                var latitude = place.geometry.location.A;
-                var longitude = place.geometry.location.F;
+                var latitude = place.geometry.location.lat();
+				var longitude = place.geometry.location.lng();  
                 var mesg = "Address: " + address;
                 mesg += "\nLatitude: " + latitude;
                 mesg += "\nLongitude: " + longitude;
-                // alert(mesg);
+
+				$("#lat").val(latitude);
+				console.log("wefewcwf: ",latitude);
+				$("#long").val(longitude);
+                 alert(mesg);
             });
         });
-    </script> -->
+    </script>
 
 
 
@@ -85,6 +91,8 @@ $count = json_decode($countData, true);
 
 	<div class="container">
 		<form method="GET" id="userForm">
+		<!--<input type="hidden" name="lat" id="lat" />
+		<input type="hidden" name="long" id="long" /> -->
 		<div class="row align-items-center" style="margin-top: 4rem;">
 						<div class="col-sm-6 col-md-offset-3">
 							<h2>Find free food centers around you?</h2>
@@ -96,8 +104,8 @@ $count = json_decode($countData, true);
 
 	                    <span class="help-block"> Help needy people find food within 5 kms radius</span>
 	    </div>
-	                    <!-- input type="hidden" name="lat"> -->
-	                    <!-- <input type="hidden" name="long"> -->
+	                    <input type="hidden" name="lat" id="lat" />
+	                    <input type="hidden" name="long" id="long" />
 
 	                 </div>
 
