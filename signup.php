@@ -53,7 +53,7 @@ include_once('menu.php');
 <br>
 
 
-<h4>I can I mention timings for Lunch and Dinner?</h3>
+<h4>Can I mention timings for Lunch and Dinner?</h3>
 
 <SPAN>Yes, we want you to mention it as people can be aware when to approach you.</SPAN>
 <br>
