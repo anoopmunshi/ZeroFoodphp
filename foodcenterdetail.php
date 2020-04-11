@@ -31,7 +31,7 @@ Dinner: <?php echo implode($data['timings']['dinner'], '-'); ?> </span>
                       <iframe src='https://maps.google.com/maps?q=<?php echo $data['lat']; ?>, <?php echo $data['long']; ?>&t=&z=13&ie=UTF8&iwloc=&z=16&output=embed' width="100%" height="250" frameborder="0" style="border:0" allowfullscreen>
                         
                       </iframe>
-                               <button type="button" class="btn  btn-lg btn-block btn-info glyphicon glyphicon-share-alt "> </button>
+                              <!--  <button type="button" class="btn  btn-lg btn-block btn-info glyphicon glyphicon-share-alt "> </button> -->
                        </div>
            </div>
 
