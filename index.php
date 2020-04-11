@@ -4,7 +4,7 @@
 include_once('header.php');
 include_once('menu.php');
 
-$countData = file_get_contents("http://3.16.206.55:3000/api/food-centers/count");
+$countData = file_get_contents("http://localhost:3000/api/food-centers/count");
 $count = json_decode($countData, true);
 
 

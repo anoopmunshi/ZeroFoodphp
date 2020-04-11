@@ -23,7 +23,7 @@ include_once('menu.php');
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-          CURLOPT_URL => "http://3.16.206.55:3000/api/login",
+          CURLOPT_URL => "http://localhost:3000/api/login",
           CURLOPT_RETURNTRANSFER => true,
           CURLOPT_ENCODING => "",
           CURLOPT_MAXREDIRS => 10,
@@ -50,7 +50,7 @@ include_once('menu.php');
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-          CURLOPT_URL => "http://3.16.206.55:3000/api/food-centers?q=".$_GET['search'],
+          CURLOPT_URL => "http://localhost:3000/api/food-centers?q=".$_GET['search'],
           CURLOPT_RETURNTRANSFER => true,
           CURLOPT_ENCODING => "",
           CURLOPT_MAXREDIRS => 10,
