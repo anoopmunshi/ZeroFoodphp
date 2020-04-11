@@ -1,4 +1,4 @@
-			<div class="container">	
+<div class="container">	
 				<header id="site-header">
 					<div class="row">
 						<div class="col-md-4 col-sm-5 col-xs-8">
@@ -23,13 +23,20 @@
 	    								<li class="cl-effect-11"><a href="signin.php" data-hover="Sign&nbsp;in">Sign in</a></li>
 	    								
 	  								</ul>
-								</div><!-- /.navbar-collapse -->
+								</div>
+
+								<!-- /.navbar-collapse -->
+								
 							</nav>						
 				</header>
             </div>
 
+
+
+
+
             <!-- Mobile Menu -->
-			<div class="overlay overlay-hugeinc">
+			<div 	class="overlay overlay-hugeinc">
 				<button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
 				<nav>
 					<ul>

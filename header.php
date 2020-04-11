@@ -12,13 +12,12 @@
 			<link rel="stylesheet" href="css/ionicons.min.css">
 			<link rel="stylesheet" href="css/pace.css">
 		    <link rel="stylesheet" href="css/custom.css">
-		    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+		    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
 		    <link rel="stylesheet" href="css/font-awesome.min.css">
 
 		    <style type="text/css">
-		    	
-		    	.grecaptcha-badge{display:none;}
-
+		   
+		   	.grecaptcha-badge{display:none;}
 
 		    </style>
     
@@ -34,6 +33,18 @@
 			<!--  // Google JS reCAPTCHA v2-->
 
 			<script src="https://www.google.com/recaptcha/api.js?render=6Le4ougUAAAAADCC0zd-jMm012n1MRvhwmz4-NTB" async defer></script>
+
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163391752-1"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-163391752-1');
+			</script>
+
 
 
 

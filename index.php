@@ -7,22 +7,26 @@ include_once('menu.php');
 $countData = file_get_contents("http://3.16.206.55:3000/api/food-centers/count");
 $count = json_decode($countData, true);
 
-$site_key = '6Le4ougUAAAAADCC0zd-jMm012n1MRvhwmz4-NTB';
-$secret_key = 'SECRET_KEY';
 
 
-if (isset($_POST['g-recaptcha-response'])) {
+// Google recaptcha 
+
+// $site_key = '6Le4ougUAAAAADCC0zd-jMm012n1MRvhwmz4-NTB';
+// $secret_key = 'SECRET_KEY';
+
+
+// if (isset($_POST['g-recaptcha-response'])) {
  
-    //get verify response data
-    $verifyCaptchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_key.'&response='.$_POST['g-recaptcha-response']);
-    $responseCaptchaData = json_decode($verifyCaptchaResponse);
-    if($responseCaptchaData->success) {
-        echo 'Captcha verified';
-        //proceed with form values
-    } else {
-        echo 'Verification failed';
-    }
-}
+//     //get verify response data
+//     $verifyCaptchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_key.'&response='.$_POST['g-recaptcha-response']);
+//     $responseCaptchaData = json_decode($verifyCaptchaResponse);
+//     if($responseCaptchaData->success) {
+//         echo 'Captcha verified';
+//         //proceed with form values
+//     } else {
+//         echo 'Verification failed';
+//     }
+// }
 
 
 
@@ -100,7 +104,18 @@ if (isset($_POST['g-recaptcha-response'])) {
 			<div class="col-md-6 col-md-offset-3">
 
 					<p style="text-align: center;">
-						<a href="#"><button type="submit" data-sitekey="6Le4ougUAAAAADCC0zd-jMm012n1MRvhwmz4-NTB" data-callback="submitForm" onclick="return getSearch();" 			class="g-recaptcha btn btn-outline-dark">Search Food Centers</button></a>				
+					
+
+
+					<a href="#"><button type="submit" onclick="return getSearch();" class="g-recaptcha btn btn-outline-dark">Search Food Centers</button></a>	
+
+
+ <!-- Google recaptcha  button data-keys-->
+
+						<!-- <a href="#"><button type="submit" data-sitekey="6Le4ougUAAAAADCC0zd-jMm012n1MRvhwmz4-NTB" data-callback="submitForm" onclick="return getSearch();" class="g-recaptcha btn btn-outline-dark">Search Food Centers</button></a> -->				
+					
+
+
 					</p>				 		
 	  		</div>
 			  </form>
@@ -133,12 +148,15 @@ if (isset($_POST['g-recaptcha-response'])) {
 						
 	  	</div>
 
-<script>
+
+ <!-- Google recaptcha  -->
+
+<!-- <script>
 function submitForm() {
     document.getElementById('userForm').submit();
 }
 </script>
-
+ -->
 		</body>
 
 
