@@ -14,6 +14,13 @@
 		    <link rel="stylesheet" href="css/custom.css">
 		    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 		    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+		    <style type="text/css">
+		    	
+		    	.grecaptcha-badge{display:none;}
+
+
+		    </style>
     
 
 		    <!-- js -->
@@ -22,6 +29,13 @@
 		    <script src="js/pace.min.js"></script>
 		    <script src="js/modernizr.custom.js"></script>
 		    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+
+
+			<!--  // Google JS reCAPTCHA v3-->
+
+			<script src="https://www.google.com/recaptcha/api.js?render=6Le4ougUAAAAADCC0zd-jMm012n1MRvhwmz4-NTB" async defer></script>
+
+
 
 
 			<!-- Hotjar Tracking Code for http://www.zerfood.in -->
