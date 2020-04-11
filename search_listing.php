@@ -123,8 +123,8 @@ $end = microtime(TRUE);
                 <td><?php echo $eachListings['state']; ?></td>
                 <td><?php echo $eachListings['city']; ?></td>
                 <td><?php echo $eachListings['address']; ?></td>         
-                <td>Lunch: <small><?php echo $eachListings['timings']['lunch']['start']; ?></small><br>
-                    Dinner: <small><?php echo $eachListings['timings']['dinner']['start']; ?></small> </td>
+                <td>Lunch: <small><?php if(isset($eachListings['timings']['lunch']['start'])) { echo $eachListings['timings']['lunch']['start']; } else { echo "NA"; } ?></small><br>
+                    Dinner: <small><?php if(isset($eachListings['timings']['dinner']['start'])) { echo $eachListings['timings']['dinner']['start']; } else { echo "NA"; } ?></small> </td>
                 <td>100</td>
                 <td><?php echo $eachListings['contactNumber']; ?></td>
                 <td> <button type="button" class="btn btn-indigo btn-sm m-0">View in Map</button></td>
