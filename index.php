@@ -34,30 +34,6 @@ $count = json_decode($countData, true);
 
 
 ?> 
-		<script type="text/javascript">
-			function getSearch(){
-				var searchText = $('#autocomplete_search').val();
-				if(searchText == ''){
-					alert("Please enter your Search location");
-					return false;
-				}
-				var lat = $('#lat').val();
-				var long = $('#long').val();
-				window.location.href = 'search_listing.php?search='+searchText+'&long='+long+"&lat="+lat;
-				
-				return false;
-			}
-		</script>
-
-
-
-
-<div class="container">
-
-
-
-<!-- Google places Autocomplete -->
-
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key='KEY'&sensor=false&libraries=places"></script>
     <script type="text/javascript">
         google.maps.event.addDomListener(window, 'load', function () {
@@ -71,16 +47,38 @@ $count = json_decode($countData, true);
                 mesg += "\nLatitude: " + latitude;
                 mesg += "\nLongitude: " + longitude;
 
-				$("#lat").val(latitude);
-				console.log("wefewcwf: ",latitude);
-				$("#long").val(longitude);
+				if(place) {
+					var searchText = $('#autocomplete_search').val();
+				if(searchText == ''){
+					alert("Please enter your Search location");
+					return false;
+				}
+
+				window.location.href = 'search_listing.php?search='+searchText+'&long='+longitude+"&lat="+latitude;
+				return false;
+				}
+				
                  //alert(mesg);
             });
         });
     </script>
+		<!-- <script type="text/javascript">
+			function getSearch(){
+				alert("Triggered");
+				return false;
+
+				
+			}
+		</script> -->
 
 
 
+
+<div class="container">
+
+
+
+<!-- Google places Autocomplete -->
 
 	<div class="row">
 <div class="alert alert-info text-center mb-4" role="alert">Can you help needy people serve free food from your home kitchen? &nbsp; Capacity does not matter,  &nbsp;you can serve 5 or 1,000s. So please Join us as a <a class="alert-link" href="signup.php">Food organiser!</a> <br> 
@@ -115,7 +113,7 @@ $count = json_decode($countData, true);
 					
 
 
-					<a href="#"><button type="submit" onclick="return getSearch();" class="g-recaptcha btn btn-outline-dark">Search Food Centers</button></a>	
+					<a href="#"><button class="g-recaptcha btn btn-outline-dark">Search Food Centers</button></a>	
 
 
  <!-- Google recaptcha  button data-keys-->
