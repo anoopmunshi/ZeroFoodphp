@@ -48,11 +48,6 @@ $count = json_decode($countData, true);
 
 
 
-	<h1 class="invisible">ZERO FOOD - Free food centers across India</h1>
-
-
-
-
 <div class="container">
 
 	<!-- Google places Autocomplete -->
