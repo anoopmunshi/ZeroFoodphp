@@ -48,7 +48,7 @@ if(isset($_GET['search'])){
   $curl = curl_init();
 
   curl_setopt_array($curl, array(
-    CURLOPT_URL => $host_url.":".$port."/api/food-centers?q=".$_GET['search'],
+    CURLOPT_URL => $host_url.":".$port."/api/food-centers?q=".urlencode($_GET['search'])."&lat=".$_GET['lat']."&long=".$_GET['long'],
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
