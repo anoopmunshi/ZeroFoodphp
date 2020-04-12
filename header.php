@@ -14,6 +14,7 @@
 		    <meta charset="utf-8">
 		    <meta name="description" content="Find list of free food centers during COVID-19 outbreak.">
 		    <meta name="keywords" content="free food, Covid free food, Coronovirus Free Food, Community Kitchens">
+		    <meta name="google-site-verification" content="X0_EhVGmTWu5ecqt4qRBGW1SUZ-ZWPVlwzdlR48CsEo" />
 
 
 		    <!-- css -->
