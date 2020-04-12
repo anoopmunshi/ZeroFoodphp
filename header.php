@@ -41,8 +41,8 @@
 
 			<!--  // Google JS reCAPTCHA v2-->
 
-			<script src="https://www.google.com/recaptcha/api.js?render=6Le4ougUAAAAADCC0zd-jMm012n1MRvhwmz4-NTB" async defer></script>
-
+<!-- 			<script src="https://www.google.com/recaptcha/api.js?render=6Le4ougUAAAAADCC0zd-jMm012n1MRvhwmz4-NTB" async defer></script>
+ -->
 
 			<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163391752-1"></script>
