@@ -6,14 +6,6 @@ include_once('menu.php');
 
 
 
-
-<div class="invisible">
-	
-	<h1>ZERO FOOD - About </h1>
-
-</div>
-
-
 <div class="content-body">
 	<div class="container">
 		<div class="row">

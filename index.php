@@ -47,7 +47,6 @@ $count = json_decode($countData, true);
 </script>
 
 
-
 <div class="container">
 
 	<!-- Google places Autocomplete -->

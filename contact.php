@@ -15,13 +15,6 @@ if(isset($_POST['type'])){
 
 
 
-<div class="invisible">
-	
-	<h1>ZERO FOOD - Contact </h1>
-
-</div>
-
-
 <div class="content-body">
 	<div class="container">
 		<div class="row">
