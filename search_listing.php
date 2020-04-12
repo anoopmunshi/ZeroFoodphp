@@ -117,14 +117,14 @@ $end = microtime(TRUE);
                   <input type="hidden" name="centerdata" value='<?php echo $allData; ?>' />
                   <th scope="row"><?php echo $count; ?></th>
                   <td><a class="text-primary" onclick="return getDetailpage(<?php echo $count; ?>);" href="#"> <?php
-                  if(isset($eachListings['name'])) { echo $eachListings['name']; } else { echo "No Info";} ?></a></td>
-                  <td><?php if(isset($eachListings['state'])) { echo $eachListings['state']; } else { echo "No Info"; } ?></td>
-                  <td><?php if(isset($eachListings['city'])) { echo $eachListings['city']; } else { echo "No Info"; } ?></td>
-                  <td><?php if(isset($eachListings['address'])) { echo $eachListings['address']; } else { echo "No Info"; } ?></td>         
-                  <td>Lunch: <small><?php if(isset($eachListings['timings']['lunch']['start'])) { echo $eachListings['timings']['lunch']['start']; } else { echo "NA"; } ?></small><br>
-                    Dinner: <small><?php if(isset($eachListings['timings']['dinner']['start'])) { echo $eachListings['timings']['dinner']['start']; } else { echo "NA"; } ?></small> </td>
-                    <td><?php if(isset($eachListings['capacity'])) { echo $eachListings['capacity']; } else { echo "No Info"; } ?></td>
-                    <td><?php if(isset($eachListings['contactNumber'])) { echo $eachListings['contactNumber']; } else { echo "No Info"; } ?></td>
+                  if(!empty($eachListings['name'])) { echo $eachListings['name']; } else { echo "No Info";} ?></a></td>
+                  <td><?php if(!empty($eachListings['state'])) { echo $eachListings['state']; } else { echo "No Info"; } ?></td>
+                  <td><?php if(!empty($eachListings['city'])) { echo $eachListings['city']; } else { echo "No Info"; } ?></td>
+                  <td><?php if(!empty($eachListings['address'])) { echo $eachListings['address']; } else { echo "No Info"; } ?></td>         
+                  <td>Lunch: <small><?php if(!empty($eachListings['timings']['lunch']['start'])) { echo $eachListings['timings']['lunch']['start']; } else { echo "NA"; } ?></small><br>
+                    Dinner: <small><?php if(!empty($eachListings['timings']['dinner']['start'])) { echo $eachListings['timings']['dinner']['start']; } else { echo "NA"; } ?></small> </td>
+                    <td><?php if(!empty($eachListings['capacity'])) { echo $eachListings['capacity']; } else { echo "No Info"; } ?></td>
+                    <td><?php if(!empty($eachListings['contactNumber'])) { echo $eachListings['contactNumber']; } else { echo "No Info"; } ?></td>
                     <td> <button type="button" class="btn btn-indigo btn-sm m-0"><a href="<?php echo $googleMapUrl; ?>" target="_blank">View in Map </a> </button></td>
 
 
