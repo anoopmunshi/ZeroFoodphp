@@ -87,7 +87,7 @@ $end = microtime(TRUE);
 
       <div class="table-responsive">
 
-       <span style="margin: 4rem;"> <h3>Nearest Free Food Centers around you</h3></span>
+       <span style="margin: 4rem;"> <h3>Nearest free food centers around you</h3></span>
        <table class="table table-hover" id="myTable">
         <thead>
           <tr>
