@@ -47,11 +47,10 @@ $count = json_decode($countData, true);
 </script>
 
 
-<div class="invisible">
-	
-	<h1>ZERO FOOD - Free food centers across India</h1>
 
-</div>
+	<h1 class="invisible">ZERO FOOD - Free food centers across India</h1>
+
+
 
 
 <div class="container">
