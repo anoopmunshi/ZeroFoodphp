@@ -45,23 +45,23 @@ include_once('menu.php');
 
 							<p>
 								
-								
+
 								Please contact us on 
 								<br>
 								<br>
 								Email: reach (@) zerofood.in
-								
+
 							</p>
 
 
 							<div class="height-40px"></div>
 							<h2 class="title text-center">Social</h2>
 							<ul class="social">
-								<li class="facebook"><a href="https://www.facebook.com/zerofoodin/"><span class="ion-social-facebook"></span></a></li>
-								<li class="twitter"><a href="https://twitter.com/zerofoodin"><span class="ion-social-twitter"></span></a></li>
+								<li class="facebook"><a target="_blank" href="https://www.facebook.com/zerofoodin/"><span class="ion-social-facebook"></span></a></li>
+								<li class="twitter"><a target="_blank" href="https://twitter.com/zerofoodin"><span class="ion-social-twitter"></span></a></li>
 
 
-								
+
 							</ul>
 						</div>
 					</article>
@@ -70,7 +70,7 @@ include_once('menu.php');
 		</div>
 	</div>
 	<?php
-	
+
 	include_once('footer.php')
-	
+
 	?>
