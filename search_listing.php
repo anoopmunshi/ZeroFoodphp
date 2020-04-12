@@ -1,6 +1,7 @@
 <?php
 include_once('header.php');
 include_once('menu.php');
+include_once('config.php');
 
 
     if(isset($_GET['search'])){
@@ -18,12 +19,10 @@ include_once('menu.php');
             $b = $a*$a;
           }
 
-
-
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-          CURLOPT_URL => "http://localhost:3000/api/login",
+          CURLOPT_URL => $host_url.":".$port."/api/login",
           CURLOPT_RETURNTRANSFER => true,
           CURLOPT_ENCODING => "",
           CURLOPT_MAXREDIRS => 10,
@@ -39,7 +38,6 @@ include_once('menu.php');
         ));
         
         $response = curl_exec($curl);
-        
         curl_close($curl);
         
         $result = json_decode($response, true);
@@ -50,7 +48,7 @@ include_once('menu.php');
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-          CURLOPT_URL => "http://localhost:3000/api/food-centers?q=".urlencode($_GET['search'])."&lat=".$_GET['lat']."&long=".$_GET['long'],
+          CURLOPT_URL => $host_url.":".$port."/api/food-centers?q=".$_GET['search'],
           CURLOPT_RETURNTRANSFER => true,
           CURLOPT_ENCODING => "",
           CURLOPT_MAXREDIRS => 10,
@@ -75,8 +73,6 @@ include_once('menu.php');
 /* End of the code to time profile */
 
 $end = microtime(TRUE);
-
-
 ?>
 
 
@@ -120,7 +116,7 @@ $end = microtime(TRUE);
                 <form id="data-<?php echo $count;?>" method="POST" action="foodcenterdetail.php">
                 <input type="hidden" name="centerdata" value='<?php echo $allData; ?>' />
                 <th scope="row"><?php echo $count; ?></th>
-                <td><a class="text-primary" onclick="return getDetailpage(<?php echo $count; ?>);" href="#"> <?php echo $eachListings['name']; ?></a></td>
+                <td><a class="text-prmiary" onclick="return getDetailpage(<?php echo $count; ?>);" href="#"> <?php echo $eachListings['name']; ?></a></td>
                 <td><?php echo $eachListings['state']; ?></td>
                 <td><?php echo $eachListings['city']; ?></td>
                 <td><?php echo $eachListings['address']; ?></td>         
@@ -128,7 +124,7 @@ $end = microtime(TRUE);
                     Dinner: <small><?php if(isset($eachListings['timings']['dinner']['start'])) { echo $eachListings['timings']['dinner']['start']; } else { echo "NA"; } ?></small> </td>
                 <td>100</td>
                 <td><?php echo $eachListings['contactNumber']; ?></td>
-                <td> <button type="button" class="btn btn-indigo btn-sm m-0"><a href="<?php echo $googleMapUrl; ?> " target="_blank">View in Map </a> </button></td>
+                <td> <button type="button" class="btn btn-indigo btn-sm m-0"><a href="<?php echo $googleMapUrl; ?>" target="_blank">View in Map </a> </button></td>
 
 
                 <!-- <td align="Center"> <button type="button" class="btn btn-sm btn-info glyphicon glyphicon-share-alt "> </button></td> -->
@@ -148,11 +144,6 @@ $end = microtime(TRUE);
             
             ?>
         </tbody>
-
-
-
-        
-
       </table>
 
       <span> <?php echo "Search completed in " . round(($end - $start), 4) ; ?> </span>
