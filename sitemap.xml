@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://zerofood.in/index.php</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2020-04-12</lastmod>
+</url>
+<url>
+  <loc>http://zerofood.in/about.php</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2020-04-12</lastmod>
+</url>
+<url>
+  <loc>http://zerofood.in/contact.php</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2020-04-12</lastmod>
+</url>
+<url>
+  <loc>http://zerofood.in/signin.php</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2020-04-12</lastmod>
+</url>
+<url>
+  <loc>http://zerofood.in/signup.php</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2020-04-12</lastmod>
+</url>
+</urlset>
