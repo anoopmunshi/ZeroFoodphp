@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-	<html>
+	<html lang="en">
 		<head>
-			<title>COVID FOOD - List of Free Food Centers Across India</title>
+			<title>Zero Food - A List of free food centers across India </title>
+
+			<!-- favicon -->
+			<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+			<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
 
 			<!-- meta -->
 			<meta charset="UTF-8">
 		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <meta charset="utf-8">
+		    <meta name="description" content="Find list of free food centers during COVID-19 outbreak.">
+		    <meta name="keywords" content="free food, Covid free food, Coronovirus Free Food, Community Kitchens">
+
 
 		    <!-- css -->
 			<link rel="stylesheet" href="css/bootstrap.min.css">
