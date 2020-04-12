@@ -121,8 +121,8 @@ $end = microtime(TRUE);
                   <td><?php if(!empty($eachListings['state'])) { echo $eachListings['state']; } else { echo "No Info"; } ?></td>
                   <td><?php if(!empty($eachListings['city'])) { echo $eachListings['city']; } else { echo "No Info"; } ?></td>
                   <td><?php if(!empty($eachListings['address'])) { echo $eachListings['address']; } else { echo "No Info"; } ?></td>         
-                  <td>Lunch: <small><?php if(!empty($eachListings['timings']['lunch']['start'])) { echo $eachListings['timings']['lunch']['start']; } else { echo "NA"; } ?></small><br>
-                    Dinner: <small><?php if(!empty($eachListings['timings']['dinner']['start'])) { echo $eachListings['timings']['dinner']['start']; } else { echo "NA"; } ?></small> </td>
+                  <td>Lunch: <small><?php if(!empty($eachListings['timings']['lunch']['start'])) { echo implode('-',$eachListings['timings']['lunch']); } else { echo "NA"; } ?></small><br>
+                    Dinner: <small><?php if(!empty($eachListings['timings']['dinner']['start'])) { echo implode('-',$eachListings['timings']['dinner']); } else { echo "NA"; } ?></small> </td>
                     <td><?php if(!empty($eachListings['capacity'])) { echo $eachListings['capacity']; } else { echo "No Info"; } ?></td>
                     <td><?php if(!empty($eachListings['contactNumber'])) { echo $eachListings['contactNumber']; } else { echo "No Info"; } ?></td>
                     <td> <button type="button" class="btn btn-indigo btn-sm m-0"><a href="<?php echo $googleMapUrl; ?>" target="_blank">View in Map </a> </button></td>
