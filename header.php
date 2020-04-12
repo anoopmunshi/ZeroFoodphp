@@ -27,7 +27,7 @@
 		    <script src="js/bootstrap.min.js"></script>
 		    <script src="js/pace.min.js"></script>
 		    <script src="js/modernizr.custom.js"></script>
-		    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+		    <script src="js/jquery.dataTables.min.js" ></script>
 
 
 			<!--  // Google JS reCAPTCHA v2-->
