@@ -51,7 +51,7 @@ $count = json_decode($countData, true);
 
 	<!-- Google places Autocomplete -->
 
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVwxnd6JIKA0MUETDExhgHtXRcLL77Kuo&libraries=places"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=+<?php echo base64_decode($places_key); ?>+&libraries=places"></script>
 
 	
 	<script type="text/javascript">
