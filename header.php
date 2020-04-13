@@ -29,7 +29,6 @@
 
 	<meta name="twitter:card" content="This wesbite helps poor people not go hungry" />
 	<meta name="twitter:site" content="@ZeroFoodIn" />
-	<meta name="twitter:creator" content="@ZeroFoodIn" />
 	<meta property="og:url" content="http://zerofood.in" />
 	<meta property="og:title" content="Zero Food - A List of free food centers across India" />
 	<meta property="og:description" content="Find free food centers across India with a simple search option, the quickly get to know who is providing free food" />
