@@ -15,6 +15,13 @@
 		    <meta name="description" content="Find list of free food centers during COVID-19 outbreak.">
 		    <meta name="keywords" content="free food, Covid free food, Coronovirus Free Food, Community Kitchens">
 		    <meta name="google-site-verification" content="X0_EhVGmTWu5ecqt4qRBGW1SUZ-ZWPVlwzdlR48CsEo" />
+			<meta property="og:url"                content="http://zerofood.in" />
+			<meta property="og:type"               content="article" />
+			<meta property="og:title"              content="Zero Food - A List of free food centers across India" />
+			<meta property="og:description"        content="Find free food centers across India" />
+			<meta property="og:image"              content="img/eradicate.png" />
+
+
 
 
 		    <!-- css -->
