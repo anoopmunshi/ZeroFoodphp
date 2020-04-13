@@ -91,7 +91,7 @@ $count = json_decode($countData, true);
 					<div id="custom-search-input" style="margin-top: 2rem;">
 						<div class="form-group ">
 
-							<input id="autocomplete_search" required="required"   name="autocomplete_search" type="text" class="form-control input-lg autocomplete-address" placeholder="Location name" />
+							<input id="autocomplete_search" required="required"   name="autocomplete_search" type="text" class="form-control input-lg autocomplete-address data-hj-whitelist" placeholder="Location name" />
 
 							<span class="help-block"> Help needy people find food within 5 kms radius</span>
 						</div>
