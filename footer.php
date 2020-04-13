@@ -5,7 +5,12 @@
 				<div class="col-md-12">
 
 					<p class="copyright">A community effort By Anonymous Citizens</p>
+					<br>
+					<div class="col-md-4 col-md-offset-4">
 
+						<a href="https://t.me/zerofoodIndia" target="_blank"   class="btn btn-info btn-block" role="button">Join Telegram</a>
+						
+					</div>
 
 				</div>
 			</div>
