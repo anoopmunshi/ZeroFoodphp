@@ -23,7 +23,7 @@
 	<meta property="og:type"               content="article" />
 	<meta property="og:title"              content="Zero Food - A List of free food centers across India" />
 	<meta property="og:description"        content="Find free food centers across India" />
-	<meta property="og:image"              content="img/eradicate.png" />
+	<meta property="og:image"              content="img/eradicate1.png" />
 
 
 
